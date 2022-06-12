@@ -1,0 +1,27 @@
+header {
+    height: 80px;
+    background-color: rgb(34, 46, 57);
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+header h1 {
+    color:rgb(34, 46, 57);
+    background-color: rgb(57, 221, 221);
+    margin-left: 30px;
+    white-space: nowrap;
+}
+
+header nav ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+header nav ul li {
+    color: rgb(57, 221, 221) ;
+    list-style: none;
+    margin: 10px;
+    border-bottom: 3px solid rgb(57, 221, 221);
+    font-size: 20px;
+}
