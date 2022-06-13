@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+
 header {
-    height: 80px;
+    height: 100%;
     background-color: rgb(34, 46, 57);
     display: flex;
     justify-content: space-between;
@@ -9,13 +14,15 @@ header {
 header h1 {
     color:rgb(34, 46, 57);
     background-color: rgb(57, 221, 221);
-    margin-left: 30px;
     white-space: nowrap;
+    padding: 0 5px 0 40px;
 }
 
 header nav ul {
     display: flex;
-    margin-right: 30px;
+    flex-wrap: wrap;
+    margin-right: 50px;
+
 }
 
 header nav ul li {
@@ -25,3 +32,139 @@ header nav ul li {
     border-bottom: 3px solid rgb(57, 221, 221);
     font-size: 20px;
 }
+
+main {
+    height: 250px;
+    position: relative;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+}
+main h2 {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    color: rgb(34, 46, 57);
+    background-color: rgb(57, 221, 221);
+    padding: 7px;
+}
+.hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.hero h2 {
+    text-align: right;
+    color: darkblue;
+    margin: 5px 10px 0 0;
+}
+
+.text {
+    border-left: 3px solid darkblue;
+    width: 60%;
+
+
+}
+.text p {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.work {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.work h2 {
+    text-align: right;
+    color: darkblue;
+    margin: 5px 10px 0 0;
+}
+
+.container {
+    border-left: 3px solid darkblue;
+    width: 60%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-gap: 5px;
+    grid-template-areas:
+      "img1 img1"
+      "img2 img3"
+      "img4 img5";
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgb(57, 221, 221);
+}
+#image1 {
+    grid-area: img1;
+    position: relative;
+}
+
+#image2 {
+    grid-area: img2;
+    position: relative;
+}
+#image3 {
+    grid-area: img3;
+    position: relative;
+}
+#image4 {
+    grid-area: img4;
+    position: relative;
+}
+#image5 {
+    grid-area: img5;
+    position: relative;
+}
+
+figcaption {
+    font-size: 0.8vw;
+    position: absolute;
+    background-color: rgb(57, 221, 221);
+    text-align: left;
+    top: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+footer h2 {
+    text-align: right;
+    color: darkblue;
+    margin-right: 10px;
+}
+.contact-me {
+    border-left: 3px solid darkblue;
+    width: 62%;
+}
+.contact-me ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-me ul li {
+    color: darkblue ;
+    list-style: none;
+    margin: 10px;
+    border-bottom: 3px solid darkblue;
+    font-size: 20px;
+}
+
